@@ -1,6 +1,7 @@
 import WorldClock from "./components/WorldClock";
 import WorldClockForm from "./components/WorldClockForm";
 import { useState } from "react";
+import './App.css'
 
 export default function App() {
   const [clocks, setClocks] = useState<

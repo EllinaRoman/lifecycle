@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  color: #000;
+  background: #fff;
+}
+
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+form {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  width: 180px;
+  height: 32px;
+  padding: 5px 8px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+button {
+  cursor: pointer;
+}
+
+form button {
+  height: 32px;
+  padding: 0 14px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.world-clock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.world-clock h1 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.world-clock p {
+  margin: 0;
+  padding: 7px 10px;
+
+  border: 1px solid #000;
+  border-radius: 3px;
+  background: #fff;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.world-clock .remove {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #000;
+  font-size: 20px;
+}

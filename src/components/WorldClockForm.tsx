@@ -20,7 +20,7 @@ export default function WorldClockForm({
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="city-name-div">
+      <div className="city-name-div div">
         <label htmlFor="city-name">Название</label>
         <input
           type="text"
@@ -33,7 +33,7 @@ export default function WorldClockForm({
         />
       </div>
 
-      <div className="city-time-div">
+      <div className="city-time-div div">
         <label htmlFor="city-time">Временная зона</label>
         <input
           type="number"
